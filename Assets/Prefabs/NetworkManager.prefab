@@ -65,10 +65,10 @@ MonoBehaviour:
   playerSpawnMethod: 1
   spawnPrefabs:
   - {fileID: 8852155254983459288, guid: 31c21b094c330d947ac0650213370e63, type: 3}
-  - {fileID: 4215767515256372701, guid: bf343be873f9bb9428118977fbabcbe2, type: 3}
+  - {fileID: 4207425166060476519, guid: 6ae8926bdc2987b4ea94f98fb939ca93, type: 3}
   - {fileID: 497511031293668132, guid: 75f9481deaeb0f6438771130edb22b84, type: 3}
   - {fileID: 8088559858392714200, guid: c44bbbaaa6bbc8a4ab52b4a06460dacf, type: 3}
-  unitSpawnerPrefab: {fileID: 4215767515256372701, guid: bf343be873f9bb9428118977fbabcbe2, type: 3}
+  unitSpawnerPrefab: {fileID: 4207425166060476519, guid: 6ae8926bdc2987b4ea94f98fb939ca93, type: 3}
   gameOverHandlerPrefab: {fileID: 8088559858392714203, guid: c44bbbaaa6bbc8a4ab52b4a06460dacf, type: 3}
 --- !u!114 &3363632611012194805
 MonoBehaviour:
