@@ -52,6 +52,22 @@ MonoBehaviour:
   maxUnitQueue: 5
   spawnMoveRange: 7
   unitSpawnDuration: 5
+--- !u!114 &8568973203526153736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4207425166060476519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12d6bdbee33551444a13199a82f24d7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  colourRenderers:
+  - {fileID: 8151882710516003988}
 --- !u!1001 &4827986399016331325
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -112,6 +128,11 @@ PrefabInstance:
 --- !u!4 &7975559626702531192 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3291732435594904133, guid: 8dcfd39d744dec94f89a5496e7b1b5a1, type: 3}
+  m_PrefabInstance: {fileID: 4827986399016331325}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &8151882710516003988 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3612232348310789289, guid: 8dcfd39d744dec94f89a5496e7b1b5a1, type: 3}
   m_PrefabInstance: {fileID: 4827986399016331325}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8390563060986092527
