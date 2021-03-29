@@ -1892,42 +1892,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 229076545422564891, guid: 79a1f80c1770d1548b1945e8fdc4080d, type: 3}
-      propertyPath: building
-      value: 
-      objectReference: {fileID: 863536146640503824, guid: d754b28181cad4847bf6e41b3f8ee5f6, type: 3}
-    - target: {fileID: 2356989605111427619, guid: 79a1f80c1770d1548b1945e8fdc4080d, type: 3}
-      propertyPath: m_Name
-      value: SmallUnitButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 2447941098550820246, guid: 79a1f80c1770d1548b1945e8fdc4080d, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2447941098550820246, guid: 79a1f80c1770d1548b1945e8fdc4080d, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2447941098550820246, guid: 79a1f80c1770d1548b1945e8fdc4080d, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 329
-      objectReference: {fileID: 0}
-    - target: {fileID: 3217423454920311342, guid: 79a1f80c1770d1548b1945e8fdc4080d, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3217423454920311342, guid: 79a1f80c1770d1548b1945e8fdc4080d, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3217423454920311342, guid: 79a1f80c1770d1548b1945e8fdc4080d, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 168.99994
-      objectReference: {fileID: 0}
-    - target: {fileID: 3309008206835879323, guid: 79a1f80c1770d1548b1945e8fdc4080d, type: 3}
-      propertyPath: m_Name
-      value: ResourceGeneratorButton (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 6975317627301370794, guid: 79a1f80c1770d1548b1945e8fdc4080d, type: 3}
       propertyPath: m_RootOrder
       value: 5
