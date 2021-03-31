@@ -186,7 +186,7 @@ MonoBehaviour:
   buildingBlockLayer:
     serializedVersion: 2
     m_Bits: 449
-  buildingRangeLimit: 5
+  buildingRangeLimit: 15
 --- !u!114 &6510714296535584038
 MonoBehaviour:
   m_ObjectHideFlags: 0

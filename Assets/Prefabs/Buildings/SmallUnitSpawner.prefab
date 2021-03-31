@@ -185,7 +185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5995934210274994850, guid: 63c718d3bd1bcf844a32f83f2fb24afa, type: 3}
       propertyPath: spawnMoveRange
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5995934210274994850, guid: 63c718d3bd1bcf844a32f83f2fb24afa, type: 3}
       propertyPath: unitSpawnDuration
