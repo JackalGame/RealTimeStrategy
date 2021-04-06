@@ -7,7 +7,6 @@ using UnityEngine.UI;
 
 public class JoinLobbyMenu : MonoBehaviour
 {
-    [SerializeField] private GameObject landingPagePanel = null;
     [SerializeField] private TMP_InputField addressInput = null;
     [SerializeField] private Button joinButton = null;
 

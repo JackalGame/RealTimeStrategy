@@ -17,12 +17,21 @@ public class RTSPlayer : NetworkBehaviour
     [SyncVar(hook = nameof(AuthorityHandlePartyOwnerStateUpdated))]
     private bool isPartyOwner = false;
 
+    [SyncVar(hook = nameof(ClientHandleDisplayNameUpdated))]
+    private string displayName;
+
     private Color teamColour = new Color();
     private List<Unit> myUnits = new List<Unit>();
     private List<Building> myBuildings = new List<Building>();
 
     public event Action<int> ClientOnResourcesUpdated;
     public static event Action<bool> AuthorityOnPartyOwnerStateUpdated;
+    public static event Action ClientOnInfoUpdated;
+
+    public string GetDisplayName()
+    {
+        return displayName;
+    }
 
     public bool GetIsPartyOwner()
     {
@@ -82,6 +91,8 @@ public class RTSPlayer : NetworkBehaviour
         Unit.ServerOnUnitDespawned += ServerHandleUnitDespawned;
         Building.ServerOnBuildingSpawned += ServerHandleBuildingSpawned;
         Building.ServerOnBuildingDespawned += ServerHandleBuildingDespawned;
+
+        DontDestroyOnLoad(gameObject);
     }
 
     public override void OnStopServer()
@@ -90,6 +101,12 @@ public class RTSPlayer : NetworkBehaviour
         Unit.ServerOnUnitDespawned -= ServerHandleUnitDespawned;
         Building.ServerOnBuildingSpawned -= ServerHandleBuildingSpawned;
         Building.ServerOnBuildingDespawned -= ServerHandleBuildingDespawned;
+    }
+
+    [Server]
+    public void SetDisplayName(string displayName)
+    {
+        this.displayName = displayName;
     }
 
     [Server]
@@ -195,11 +212,15 @@ public class RTSPlayer : NetworkBehaviour
     {
         if (NetworkServer.active) { return; }
 
+        DontDestroyOnLoad(gameObject);
+
         ((RTSNetworkManager)NetworkManager.singleton).players.Add(this);
     }
 
     public override void OnStopClient()
     {
+        ClientOnInfoUpdated?.Invoke();
+
         if (!isClientOnly) { return; }
 
         ((RTSNetworkManager)NetworkManager.singleton).players.Remove(this);
@@ -242,6 +263,11 @@ public class RTSPlayer : NetworkBehaviour
     private void ClientHandleResourcesUpdated(int oldResources, int newResources)
     {
         ClientOnResourcesUpdated?.Invoke(newResources);
+    }
+
+    private void ClientHandleDisplayNameUpdated(string oldDisplayName, string newDisplayName)
+    {
+        ClientOnInfoUpdated?.Invoke();
     }
 
     #endregion

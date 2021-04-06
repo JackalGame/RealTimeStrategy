@@ -58,6 +58,8 @@ public class RTSNetworkManager : NetworkManager
 
         players.Add(player);
 
+        player.SetDisplayName($"Player {players.Count}");
+
         player.SetTeamColour(UnityEngine.Random.ColorHSV(0f, 1f, 0.8f, 1f, 0.8f, 1f));
 
         player.SetPartyOwner(players.Count == 1);

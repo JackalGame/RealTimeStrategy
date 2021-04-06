@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 using Mirror;
+using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class CameraController : NetworkBehaviour
 {
@@ -12,6 +13,7 @@ public class CameraController : NetworkBehaviour
     [SerializeField] private Vector2 screenXLimits = Vector2.zero;
     [SerializeField] private Vector2 screenZLimits = Vector2.zero;
 
+
     private Vector2 previousInput;
 
     private Controls controls;
@@ -19,8 +21,7 @@ public class CameraController : NetworkBehaviour
     public override void OnStartAuthority()
     {
         playerCameraTransform.gameObject.SetActive(true);
-        transform.position += new Vector3(0, 0, -15);
-
+        
         controls = new Controls();
 
         controls.Player.MoveCamera.performed += SetPreviousInput;
@@ -30,7 +31,6 @@ public class CameraController : NetworkBehaviour
     }
 
     [ClientCallback]
-
     private void Update()
     {
         if (!hasAuthority || !Application.isFocused) { return; }
@@ -42,17 +42,17 @@ public class CameraController : NetworkBehaviour
     {
         Vector3 pos = playerCameraTransform.position;
 
-        if(previousInput == Vector2.zero)
+        if (previousInput == Vector2.zero)
         {
             Vector3 cursorMovement = Vector3.zero;
 
             Vector2 cursorPosition = Mouse.current.position.ReadValue();
 
-            if(cursorPosition.y >= Screen.height - screenBorderThickness)
+            if (cursorPosition.y >= Screen.height - screenBorderThickness)
             {
                 cursorMovement.z += 1;
             }
-            else if(cursorPosition.y <= screenBorderThickness)
+            else if (cursorPosition.y <= screenBorderThickness)
             {
                 cursorMovement.z -= 1;
             }
@@ -69,7 +69,7 @@ public class CameraController : NetworkBehaviour
         }
         else
         {
-            pos += new Vector3(previousInput.x, 0, previousInput.y) * speed * Time.deltaTime;
+            pos += new Vector3(previousInput.x, 0f, previousInput.y) * speed * Time.deltaTime;
         }
 
         pos.x = Mathf.Clamp(pos.x, screenXLimits.x, screenXLimits.y);
