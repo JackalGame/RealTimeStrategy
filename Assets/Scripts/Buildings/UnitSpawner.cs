@@ -9,6 +9,7 @@ public class UnitSpawner : NetworkBehaviour, IPointerClickHandler
     [SerializeField] private Health health = null;
     [SerializeField] private Unit unitPrefab = null;
     [SerializeField] private Transform unitSpawnPoint = null;
+    [SerializeField] private Canvas unitSpawningCanvas = null;
     [SerializeField] private TMP_Text remainingUnitsText = null;
     [SerializeField] private Image unitProgressImage = null;
     [SerializeField] private int maxUnitQueue = 5;
@@ -110,6 +111,12 @@ public class UnitSpawner : NetworkBehaviour, IPointerClickHandler
 
     private void UpdateTimerDisplay()
     {
+        if (!hasAuthority)
+        {
+            unitSpawningCanvas.enabled = false;
+            return;
+        }
+        
         float newProgress = unitTimer / unitSpawnDuration;
 
         if (newProgress < unitProgressImage.fillAmount)

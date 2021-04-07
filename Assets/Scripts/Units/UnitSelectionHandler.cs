@@ -135,11 +135,6 @@ public class UnitSelectionHandler : MonoBehaviour
         GameOverHandler.ClientOnGameOver -= ClientHandlePlayerDeath;
     }
 
-    public bool GetIsBuildingState()
-    {
-        return isBuilding;
-    }
-
     public void SetIsBuildingState(bool isBuildingState)
     {
         isBuilding = isBuildingState;
