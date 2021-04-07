@@ -63,6 +63,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 97da417cf9a25954a8a8466c8f274ea4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 4212650708864831149, guid: 97da417cf9a25954a8a8466c8f274ea4, type: 3}
+    - target: {fileID: -7511558181221131132, guid: 97da417cf9a25954a8a8466c8f274ea4, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: -8212680083840791456, guid: 97da417cf9a25954a8a8466c8f274ea4, type: 3}
     - target: {fileID: 919132149155446097, guid: 97da417cf9a25954a8a8466c8f274ea4, type: 3}
       propertyPath: m_Name
       value: tank with lazer cannon
