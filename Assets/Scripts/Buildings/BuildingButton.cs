@@ -20,6 +20,7 @@ public class BuildingButton : MonoBehaviour, IPointerDownHandler, IPointerUpHand
     private GameObject buildingPreviewInstance;
     private Renderer buildingRendererInstance;
 
+    private UnitSelectionHandler unitSelection;
 
     private void Start()
     {
@@ -30,6 +31,8 @@ public class BuildingButton : MonoBehaviour, IPointerDownHandler, IPointerUpHand
 
         iconImage.sprite = building.GetIcon();
         priceText.text = building.GetPrice().ToString();
+
+        unitSelection = FindObjectOfType<UnitSelectionHandler>();
     }
 
     private void Update()
@@ -44,6 +47,8 @@ public class BuildingButton : MonoBehaviour, IPointerDownHandler, IPointerUpHand
         if(eventData.button != PointerEventData.InputButton.Left) { return; }
 
         if(player.GetMyResources() < building.GetPrice()) { return; }
+
+        unitSelection.SetIsBuildingState(true);
 
         buildingPreviewInstance = Instantiate(building.GetBuildingPreview());
         buildingRendererInstance = buildingPreviewInstance.GetComponentInChildren<Renderer>();
@@ -61,6 +66,8 @@ public class BuildingButton : MonoBehaviour, IPointerDownHandler, IPointerUpHand
         {
             player.CmdTryPlaceBuilding(building.GetId(),hit.point);
         }
+
+        unitSelection.SetIsBuildingState(false);
 
         Destroy(buildingRendererInstance);
     }

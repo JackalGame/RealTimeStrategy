@@ -14,6 +14,7 @@ public class UnitSelectionHandler : MonoBehaviour
     private RTSPlayer player;
     private Camera mainCamera;
     public List<Unit> SelectedUnits { get; } = new List<Unit>();
+    private bool isBuilding = false;
 
     private void Start()
     {
@@ -43,6 +44,8 @@ public class UnitSelectionHandler : MonoBehaviour
 
     private void StartSelectionArea()
     {
+        if (isBuilding) { return; }
+        
         if (!Keyboard.current.leftShiftKey.isPressed)
         {
             foreach (Unit selectedUnit in SelectedUnits)
@@ -130,5 +133,15 @@ public class UnitSelectionHandler : MonoBehaviour
     {
         Unit.AuthorityOnUnitDespawned -= AuthorityHandleUnitDespawned;
         GameOverHandler.ClientOnGameOver -= ClientHandlePlayerDeath;
+    }
+
+    public bool GetIsBuildingState()
+    {
+        return isBuilding;
+    }
+
+    public void SetIsBuildingState(bool isBuildingState)
+    {
+        isBuilding = isBuildingState;
     }
 }
