@@ -14,9 +14,9 @@ TagManager:
   - Terrain
   - Projectile
   - Unit
-  - Minimap
+  - Minimap_No
   - Floor
-  - 
+  - Minimap_Yes
   - 
   - 
   - 

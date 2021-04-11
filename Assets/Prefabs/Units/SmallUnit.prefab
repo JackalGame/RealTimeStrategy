@@ -81,6 +81,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4401355901588541371, guid: 31c21b094c330d947ac0650213370e63, type: 3}
+      propertyPath: minimapIcon
+      value: 
+      objectReference: {fileID: 1962364836074710449}
     - target: {fileID: 294504894270481052, guid: 31c21b094c330d947ac0650213370e63, type: 3}
       propertyPath: maxHealth
       value: 60
@@ -282,5 +286,10 @@ PrefabInstance:
 --- !u!4 &6408168196025987334 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4421147980321681708, guid: 31c21b094c330d947ac0650213370e63, type: 3}
+  m_PrefabInstance: {fileID: 7328888953431900202}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1962364836074710449 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9119448154530686363, guid: 31c21b094c330d947ac0650213370e63, type: 3}
   m_PrefabInstance: {fileID: 7328888953431900202}
   m_PrefabAsset: {fileID: 0}

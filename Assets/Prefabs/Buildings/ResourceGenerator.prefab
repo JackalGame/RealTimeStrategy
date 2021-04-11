@@ -197,6 +197,10 @@ PrefabInstance:
       propertyPath: aimAtPoint
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: -2315514187143859587, guid: cf598311600950d4c9010231a9ed8fe3, type: 3}
+      propertyPath: minimapIcon
+      value: 
+      objectReference: {fileID: 1353149862144261769}
     - target: {fileID: 299362102176422670, guid: cf598311600950d4c9010231a9ed8fe3, type: 3}
       propertyPath: id
       value: 1

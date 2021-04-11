@@ -163,6 +163,7 @@ GameObject:
   - component: {fileID: 294504894270481052}
   - component: {fileID: -802679285538208202}
   - component: {fileID: 2360148850846349435}
+  - component: {fileID: -4401355901588541371}
   m_Layer: 8
   m_Name: Unit
   m_TagString: Untagged
@@ -224,6 +225,9 @@ MonoBehaviour:
   localPositionSensitivity: 0.01
   localRotationSensitivity: 0.01
   localScaleSensitivity: 0.01
+  compressRotation: 0
+  interpolateScale: 1
+  syncScale: 1
 --- !u!195 &3325395859926762107
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -420,6 +424,21 @@ MonoBehaviour:
   colourRenderers:
   - {fileID: 0}
   - {fileID: 6029356126241180223}
+--- !u!114 &-4401355901588541371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8852155254983459288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf05f4b20956db41979fb3b3adcceaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  minimapIcon: {fileID: 0}
 --- !u!1 &9119448154530686363
 GameObject:
   m_ObjectHideFlags: 0

@@ -128,6 +128,7 @@ MonoBehaviour:
   health: {fileID: 2376170319081851120}
   unitPrefab: {fileID: 7614092976428068198, guid: 31c21b094c330d947ac0650213370e63, type: 3}
   unitSpawnPoint: {fileID: 6967263598906636928}
+  unitSpawningCanvas: {fileID: 0}
   remainingUnitsText: {fileID: 2171561922435359106}
   unitProgressImage: {fileID: 9168508246779122816}
   maxUnitQueue: 5
@@ -161,6 +162,10 @@ PrefabInstance:
       propertyPath: aimAtPoint
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: -2315514187143859587, guid: cf598311600950d4c9010231a9ed8fe3, type: 3}
+      propertyPath: minimapIcon
+      value: 
+      objectReference: {fileID: 97747756621832544}
     - target: {fileID: 299362102176422670, guid: cf598311600950d4c9010231a9ed8fe3, type: 3}
       propertyPath: id
       value: 1

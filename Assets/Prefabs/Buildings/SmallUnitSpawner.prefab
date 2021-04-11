@@ -163,6 +163,10 @@ PrefabInstance:
       propertyPath: maxHealth
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 3147137335292766610, guid: 63c718d3bd1bcf844a32f83f2fb24afa, type: 3}
+      propertyPath: minimapIcon
+      value: 
+      objectReference: {fileID: 8860383688468800913}
     - target: {fileID: 3500831422498770886, guid: 63c718d3bd1bcf844a32f83f2fb24afa, type: 3}
       propertyPath: aimAtPoint
       value: 
@@ -281,5 +285,10 @@ Transform:
 --- !u!223 &7393541578834645485 stripped
 Canvas:
   m_CorrespondingSourceObject: {fileID: 2104887401680016668, guid: 63c718d3bd1bcf844a32f83f2fb24afa, type: 3}
+  m_PrefabInstance: {fileID: 8911828802159510769}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8860383688468800913 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 97747756621832544, guid: 63c718d3bd1bcf844a32f83f2fb24afa, type: 3}
   m_PrefabInstance: {fileID: 8911828802159510769}
   m_PrefabAsset: {fileID: 0}
