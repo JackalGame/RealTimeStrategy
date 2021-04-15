@@ -11,4 +11,12 @@ public class MinimapIcon : NetworkBehaviour
     {
         minimapIcon.layer = 11;
     }
+
+    public void ChangeMinimapIconState(int layer)
+    {
+        if (connectionToClient == connectionToClient) { return; }
+        Debug.Log("Radar found object");
+
+        minimapIcon.layer = layer;
+    }
 }

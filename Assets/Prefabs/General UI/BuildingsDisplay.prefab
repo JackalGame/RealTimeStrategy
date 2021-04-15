@@ -244,6 +244,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: ResourceGeneratorButton (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3746888859019759108, guid: 244d360d0bfd7004b9081c86ded465d1, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3746888859019759108, guid: 244d360d0bfd7004b9081c86ded465d1, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3746888859019759108, guid: 244d360d0bfd7004b9081c86ded465d1, type: 3}
+      propertyPath: m_Color.r
+      value: 0.3962264
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 244d360d0bfd7004b9081c86ded465d1, type: 3}
 --- !u!224 &3217423454920311342 stripped
@@ -350,6 +362,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: SmallUnitButton
       objectReference: {fileID: 0}
+    - target: {fileID: 3746888859019759108, guid: 244d360d0bfd7004b9081c86ded465d1, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3746888859019759108, guid: 244d360d0bfd7004b9081c86ded465d1, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3746888859019759108, guid: 244d360d0bfd7004b9081c86ded465d1, type: 3}
+      propertyPath: m_Color.r
+      value: 0.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 244d360d0bfd7004b9081c86ded465d1, type: 3}
 --- !u!224 &2447941098550820246 stripped
@@ -455,6 +479,18 @@ PrefabInstance:
     - target: {fileID: 3309008207095120054, guid: 244d360d0bfd7004b9081c86ded465d1, type: 3}
       propertyPath: m_Name
       value: LargeUnitButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 3746888859019759108, guid: 244d360d0bfd7004b9081c86ded465d1, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3746888859019759108, guid: 244d360d0bfd7004b9081c86ded465d1, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3746888859019759108, guid: 244d360d0bfd7004b9081c86ded465d1, type: 3}
+      propertyPath: m_Color.r
+      value: 0.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 244d360d0bfd7004b9081c86ded465d1, type: 3}

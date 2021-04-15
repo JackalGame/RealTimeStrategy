@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 1641748910635011967}
   - component: {fileID: 299362102176422670}
   - component: {fileID: -4259218842384362455}
-  - component: {fileID: -2315514187143859587}
   m_Layer: 0
   m_Name: Building
   m_TagString: Untagged
@@ -148,21 +147,6 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   aimAtPoint: {fileID: 0}
---- !u!114 &-2315514187143859587
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5625702111255053192}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bf05f4b20956db41979fb3b3adcceaa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  minimapIcon: {fileID: 0}
 --- !u!1001 &3834070362101708190
 PrefabInstance:
   m_ObjectHideFlags: 0
